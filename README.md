@@ -10,7 +10,7 @@
 
 ## Demo
 
-**Live site:** [heictojpg]([https://heictojpg.com](https://heic2jpg-online.netlify.app/))
+**Live site:** (https://heic2jpg-online.netlify.app/)
 
 Convert any HEIC (iPhone default) or WebP image to high-quality JPEG — instantly, privately, and for free.
 
