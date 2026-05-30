@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://heictojpg.com/static/sitemap.xml

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About — HEIC &amp; WebP to JPG Converter | HEICtoJPG</title>
+    <meta name="description" content="Learn about HEICtoJPG — a fast, private, and free image conversion tool. Convert HEIC and WebP to JPG instantly with no signup required.">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0A0A0F">
+    <link rel="canonical" href="https://heictojpg.com/about">
+    <meta property="og:title" content="About — HEIC &amp; WebP to JPG Converter">
+    <meta property="og:description" content="Learn about HEICtoJPG — a fast, private, and free image conversion tool.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://heictojpg.com/about">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="About — HEIC &amp; WebP to JPG Converter">
+    <meta name="twitter:description" content="Learn about HEICtoJPG — a fast, private, and free image conversion tool.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #0A0A0F;
+            color: #F1F5F9;
+            line-height: 1.7;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        a { text-decoration: none; color: inherit; }
+        .container { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+        .navbar {
+            position: sticky; top: 0; z-index: 100;
+            background: #0A0A0F;
+            border-bottom: 1px solid #1E1E2E;
+            padding: 0 24px;
+        }
+        .navbar-inner {
+            max-width: 960px; margin: 0 auto;
+            display: flex; align-items: center; justify-content: space-between;
+            height: 72px;
+        }
+        .logo {
+            font-size: 24px; font-weight: 800;
+            color: #F5C518;
+            letter-spacing: -0.5px;
+        }
+        .nav-links { display: flex; gap: 32px; align-items: center; }
+        .nav-links a { font-size: 16px; font-weight: 500; color: #64748B; transition: color 0.2s; position: relative; padding-bottom: 4px; }
+        .nav-links a:hover { color: #F5C518; }
+        .nav-links a::after {
+            content: ''; position: absolute; bottom: -2px; left: 0; width: 0;
+            height: 2px; background: #F5C518; border-radius: 1px; transition: width 0.2s;
+        }
+        .nav-links a:hover::after { width: 100%; }
+        .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
+        .hamburger span { display: block; width: 26px; height: 2px; background: #F1F5F9; border-radius: 2px; transition: 0.3s; }
+
+        .hero {
+            background: #0A0A0F;
+            text-align: center;
+            padding: 64px 24px 40px;
+        }
+        .hero h1 {
+            font-size: 44px; font-weight: 800; letter-spacing: -0.5px;
+            color: #F5C518;
+        }
+        .hero p { font-size: 18px; color: #64748B; margin-top: 10px; }
+
+        .page-content {
+            padding: 16px 0 64px;
+            animation: fadeUp 0.4s ease;
+        }
+        @keyframes fadeUp { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+
+        .content-card {
+            background: #111118;
+            border: 1px solid #1E1E2E;
+            border-radius: 16px;
+            padding: 36px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.3);
+        }
+        .content-card h2 {
+            font-size: 24px; font-weight: 700; color: #F1F5F9;
+            margin-top: 32px; margin-bottom: 12px;
+        }
+        .content-card h2:first-child { margin-top: 0; }
+        .content-card p {
+            color: #94A3B8; font-size: 16px; margin-bottom: 14px;
+        }
+        .mission-box {
+            background: rgba(245,197,24,0.04);
+            border-left: 4px solid #F5C518;
+            padding: 20px 24px;
+            border-radius: 0 12px 12px 0;
+            margin-top: 20px;
+        }
+        .mission-box p { color: #F5C518; margin-bottom: 0; font-weight: 500; }
+
+        .footer {
+            background: #111118;
+            border-top: 1px solid #1E1E2E;
+            padding: 40px 24px 28px; margin-top: auto; text-align: center;
+        }
+        .footer-links { display: flex; justify-content: center; gap: 28px; flex-wrap: wrap; margin-bottom: 16px; }
+        .footer-links a { color: #64748B; font-size: 16px; transition: color 0.2s; }
+        .footer-links a:hover { color: #F5C518; }
+        .footer-tagline { color: #64748B; font-size: 15px; margin-bottom: 10px; }
+        .footer-copy { color: #475569; font-size: 14px; }
+        .footer-designed { color: #64748B; font-size: 14px; margin-top: 8px; }
+        .footer-designed a { color: #818CF8; text-decoration: none; }
+        .footer-designed a:hover { color: #F5C518; }
+
+        .cookie-banner {
+            position: fixed; bottom: 0; left: 0; right: 0;
+            background: #111118; border-top: 1px solid #1E1E2E;
+            padding: 16px 24px; display: none;
+            align-items: center; justify-content: center;
+            gap: 20px; z-index: 999; flex-wrap: wrap; text-align: center;
+        }
+        .cookie-banner.show { display: flex; }
+        .cookie-banner p { color: #94A3B8; font-size: 15px; }
+        .cookie-banner a { color: #F5C518; text-decoration: underline; }
+        .cookie-btn {
+            padding: 8px 24px; background: #F5C518; color: #0A0A0F;
+            border: none; border-radius: 999px; font-size: 15px;
+            font-weight: 600; font-family: 'Inter', sans-serif;
+            cursor: pointer; white-space: nowrap; transition: transform 0.15s;
+        }
+        .cookie-btn:hover { transform: translateY(-1px); }
+
+        @media (max-width: 640px) {
+            .nav-links {
+                display: none; position: absolute;             top: 72px; left: 0; right: 0;
+                background: #0A0A0F; flex-direction: column; padding: 16px 24px 24px;
+                gap: 16px; border-bottom: 1px solid #1E1E2E;
+            }
+            .nav-links.open { display: flex; }
+            .hamburger { display: flex; }
+            .hero h1 { font-size: 32px; }
+            .content-card { padding: 24px 20px; }
+        }
+    </style>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "About HEICtoJPG",
+        "description": "Learn about HEICtoJPG — a fast, private, and free image conversion tool.",
+        "url": "https://heictojpg.com/about"
+    }
+    </script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-inner">
+            <a href="/" class="logo">HEICtoJPG</a>
+            <div class="nav-links" id="navLinks">
+                <a href="/">Home</a>
+                <a href="/how-it-works">How It Works</a>
+                <a href="/about">About</a>
+                <a href="/contact">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>About HEICtoJPG</h1>
+        <p>A fast, private, and free image conversion tool built for everyone.</p>
+    </section>
+
+    <div class="container page-content">
+        <div class="content-card">
+            <h2>Our Mission</h2>
+            <p>HEIC and WebP are modern image formats that save space but aren't always compatible with older software, social media platforms, or photo printing services. Our mission is to provide a dead-simple tool that converts these files to the universally supported JPG format — instantly and without compromising your privacy.</p>
+
+            <div class="mission-box">
+                <p>Your files are processed on the fly and never stored. We don't upload your data to any cloud — it stays on the server only for the duration of the conversion.</p>
+            </div>
+
+            <h2>Why Use This Tool?</h2>
+            <p><strong style="color:#F5C518;">Speed:</strong> Conversions happen in seconds. Just upload, click convert, and download.</p>
+            <p><strong style="color:#F5C518;">Privacy:</strong> No accounts, no tracking, no saved files. What you convert stays between you and your browser.</p>
+            <p><strong style="color:#F5C518;">Free:</strong> No paywalls, no credit cards, no hidden limits. Convert as many images as you need.</p>
+            <p><strong style="color:#F5C518;">Quality:</strong> We use high-quality JPEG encoding at 90% quality to ensure your images look great.</p>
+
+            <h2>Supported Formats</h2>
+            <p><strong style="color:#F5C518;">HEIC/HEIF:</strong> High Efficiency Image Format used by Apple devices (iPhone, iPad, Mac). HEIC saves up to 50% storage compared to JPG while maintaining quality.</p>
+            <p><strong style="color:#F5C518;">WebP:</strong> Google's modern image format designed for the web with superior compression. WebP images are typically 25-35% smaller than JPG files at equivalent quality.</p>
+
+            <h2>Our Commitment</h2>
+            <p>HEICtoJPG was built with a simple philosophy: image conversion should be free, fast, and private. We don't ask for registration, we don't track your uploads, and we never share your files. Every conversion is processed securely and deleted immediately after download. No gimmicks, no upsells — just a tool that works.</p>
+            <p>Whether you're a photographer needing to deliver JPG files to clients, an iPhone user sending photos to friends on older devices, or a web developer working with WebP assets, HEICtoJPG makes the process seamless.</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="/">Home</a>
+            <a href="/how-it-works">How It Works</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+            <a href="/privacy">Privacy</a>
+            <a href="/terms-of-service">Terms</a>
+        </div>
+        <div class="footer-tagline">100% Free — No signup — No watermark</div>
+        <div class="footer-copy">&copy; 2026 HEICtoJPG. All rights reserved.</div>
+        <div class="footer-designed">Designed By <a href="https://www.facebook.com/moekhalifa8/" target="_blank" rel="noopener">Mohamed Khalifa</a></div>
+    </footer>
+
+    <div class="cookie-banner" id="cookieBanner">
+        <p>This website uses cookies to improve your experience. By using our site, you accept our <a href="/privacy">Privacy Policy</a>.</p>
+        <button class="cookie-btn" id="cookieBtn">Accept</button>
+    </div>
+
+    <script>
+        document.getElementById('hamburger').addEventListener('click', function() {
+            document.getElementById('navLinks').classList.toggle('open');
+        });
+
+        if (!localStorage.getItem('cookieConsent')) {
+            document.getElementById('cookieBanner').classList.add('show');
+        }
+        document.getElementById('cookieBtn').addEventListener('click', function() {
+            localStorage.setItem('cookieConsent', 'true');
+            document.getElementById('cookieBanner').classList.remove('show');
+        });
+    </script>
+</body>
+</html>
